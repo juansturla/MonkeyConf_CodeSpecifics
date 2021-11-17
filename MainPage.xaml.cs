@@ -2,6 +2,7 @@
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Essentials;
 
+
 namespace MonkeyConf
 {
 	public partial class MainPage : ContentPage
@@ -24,6 +25,12 @@ namespace MonkeyConf
 
         void OpenSettings_Clicked(System.Object sender, System.EventArgs e)
 		{
+#if __IOS__
+
+
+#endif
+
+
 			DependencyService.Resolve<IOpenSettings>()?.OpenWifiSettings();
 		}
     }
