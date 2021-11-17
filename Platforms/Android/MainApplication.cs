@@ -8,15 +8,16 @@ using MonkeyConf.Platforms.Android;
 
 namespace MonkeyConf
 {
-	[Application]
-	public class MainApplication : MauiApplication
-	{
-		public MainApplication(IntPtr handle, JniHandleOwnership ownership)
-			: base(handle, ownership)
-		{
-			DependencyService.Register<ITostadora, TostadoraAndroid>();
-		}
+    [Application]
+    public class MainApplication : MauiApplication
+    {
+        public MainApplication(IntPtr handle, JniHandleOwnership ownership)
+            : base(handle, ownership)
+        {
+            DependencyService.Register<ITostadora, TostadoraAndroid>();
+            DependencyService.Register<IOpenSettings, OpenSettingsAndroid>();
+        }
 
-		protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-	}
+        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+    }
 }
