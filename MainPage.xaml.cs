@@ -19,6 +19,7 @@ namespace MonkeyConf
 			CounterLabel.Text = $"Current count: {count}";
 
 			SemanticScreenReader.Announce(CounterLabel.Text);
+			DependencyService.Resolve<ITostadora>().HacerTostadas(CounterLabel.Text);
 		}
 	}
 }
