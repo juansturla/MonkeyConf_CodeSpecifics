@@ -21,5 +21,10 @@ namespace MonkeyConf
 			SemanticScreenReader.Announce(CounterLabel.Text);
 			DependencyService.Resolve<ITostadora>()?.HacerTostadas(CounterLabel.Text);
 		}
-	}
+
+        void OpenSettings_Clicked(System.Object sender, System.EventArgs e)
+		{
+			DependencyService.Resolve<IOpenSettings>()?.OpenWifiSettings();
+		}
+    }
 }
