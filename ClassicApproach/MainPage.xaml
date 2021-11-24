@@ -15,7 +15,7 @@
                 HorizontalOptions="Center" />
 
             <Label 
-                Text="Código específico de Plataformas"
+                Text="Código específico de Plataformas (Manera clásica)"
                 Grid.Row="1"
                 SemanticProperties.HeadingLevel="Level1"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"

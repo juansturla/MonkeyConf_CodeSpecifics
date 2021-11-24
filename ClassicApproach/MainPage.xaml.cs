@@ -25,12 +25,6 @@ namespace MonkeyConf
 
         void OpenSettings_Clicked(System.Object sender, System.EventArgs e)
 		{
-#if __IOS__
-
-
-#endif
-
-
 			DependencyService.Resolve<IOpenSettings>()?.OpenWifiSettings();
 		}
     }
