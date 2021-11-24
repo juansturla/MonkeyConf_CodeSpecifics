@@ -3,7 +3,7 @@ namespace MonkeyConf
 {
     public partial class OpenSettings
     {
-        partial void OpenWifiSettings();
+        public partial void OpenWifiSettings();
     }
 }
 

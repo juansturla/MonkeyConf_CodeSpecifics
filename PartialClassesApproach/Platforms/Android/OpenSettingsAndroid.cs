@@ -5,12 +5,8 @@ using Android.Provider;
 
 namespace MonkeyConf.Platforms.Android
 {
-    public class OpenSettingsAndroid : IOpenSettings
+    public partial class OpenSettings
     {
-        public OpenSettingsAndroid()
-        {
-        }
-
         public void OpenWifiSettings()
         {
             var intent = new Intent(Settings.ActionWifiSettings);

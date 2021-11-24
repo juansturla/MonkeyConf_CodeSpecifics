@@ -3,7 +3,7 @@ namespace MonkeyConf
 {
     public partial class Tostadora
     {
-        partial void HacerTostadas(string textToShow);
+        public partial void HacerTostadas(string textToShow);
     }
 }
 

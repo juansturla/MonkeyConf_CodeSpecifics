@@ -20,18 +20,12 @@ namespace MonkeyConf
 			CounterLabel.Text = $"Current count: {count}";
 
 			SemanticScreenReader.Announce(CounterLabel.Text);
-			DependencyService.Resolve<ITostadora>()?.HacerTostadas(CounterLabel.Text);
+			new Tostadora().HacerTostadas(CounterLabel.Text);
 		}
 
         void OpenSettings_Clicked(System.Object sender, System.EventArgs e)
 		{
-#if __IOS__
-
-
-#endif
-
-
-			DependencyService.Resolve<IOpenSettings>()?.OpenWifiSettings();
+			new OpenSettings().OpenWifiSettings();
 		}
     }
 }
