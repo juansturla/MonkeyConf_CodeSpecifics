@@ -1,11 +1,13 @@
 ﻿using System;
 using Android.Widget;
 
-namespace MonkeyConf.Platforms.Android
+//Cuidado con los espacios de nombres!
+//namespace MonkeyConf.Platforms.Android
+namespace MonkeyConf
 {
     public partial class Tostadora
     {
-        public void HacerTostadas(string textToShow)
+        partial void HacerTostadas(string textToShow)
         {
             var context = MainApplication.Context;
             Toast tostada = new Toast(context);

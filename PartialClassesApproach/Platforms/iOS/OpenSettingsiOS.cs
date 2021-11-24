@@ -2,11 +2,13 @@
 using Foundation;
 using UIKit;
 
-namespace MonkeyConf.Platforms.iOS
+//Cuidado con los espacios de nombres!
+//namespace MonkeyConf.Platforms.iOS
+namespace MonkeyConf
 {
     public partial class OpenSettings
     {
-        public void OpenWifiSettings()
+        public partial void OpenWifiSettings()
         {
             UIApplication.SharedApplication.OpenUrl(new NSUrl(UIApplication.OpenSettingsUrlString));
         }
