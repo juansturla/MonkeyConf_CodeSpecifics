@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyConf_ConditionalCompi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyConf_PartialClasses", "PartialClassesApproach\MonkeyConf_PartialClasses.csproj", "{01C039D0-2654-4CBE-96DA-FA5D3AFB04EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyConf_ClassicApproach", "ClassicApproach\MonkeyConf_ClassicApproach.csproj", "{A2AC94A6-E2DD-4E3F-B6CC-92F9E0DB6EB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyConf_ClassicApproach", "ClassicApproach\MonkeyConf_ClassicApproach.csproj", "{FA7DE0EA-BCC4-4925-9ED7-3573B6E5D527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{01C039D0-2654-4CBE-96DA-FA5D3AFB04EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C039D0-2654-4CBE-96DA-FA5D3AFB04EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C039D0-2654-4CBE-96DA-FA5D3AFB04EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2AC94A6-E2DD-4E3F-B6CC-92F9E0DB6EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2AC94A6-E2DD-4E3F-B6CC-92F9E0DB6EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2AC94A6-E2DD-4E3F-B6CC-92F9E0DB6EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2AC94A6-E2DD-4E3F-B6CC-92F9E0DB6EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7DE0EA-BCC4-4925-9ED7-3573B6E5D527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7DE0EA-BCC4-4925-9ED7-3573B6E5D527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7DE0EA-BCC4-4925-9ED7-3573B6E5D527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7DE0EA-BCC4-4925-9ED7-3573B6E5D527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
