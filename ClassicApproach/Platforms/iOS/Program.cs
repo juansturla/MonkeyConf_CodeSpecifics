@@ -1,4 +1,6 @@
-﻿using UIKit;
+﻿using Microsoft.Maui.Controls;
+using UIKit;
+using MonkeyConf.Platforms.iOS;
 
 namespace MonkeyConf
 {
@@ -9,6 +11,7 @@ namespace MonkeyConf
 		{
 			// if you want to use a different Application Delegate class from "AppDelegate"
 			// you can specify it here.
+			DependencyService.Register<IOpenSettings, OpenSettingsiOS>();
 			UIApplication.Main(args, null, typeof(AppDelegate));
 		}
 	}
