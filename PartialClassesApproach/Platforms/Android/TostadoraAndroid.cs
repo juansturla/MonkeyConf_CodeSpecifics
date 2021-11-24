@@ -3,12 +3,8 @@ using Android.Widget;
 
 namespace MonkeyConf.Platforms.Android
 {
-    public class TostadoraAndroid:ITostadora
+    public partial class Tostadora
     {
-        public TostadoraAndroid()
-        {
-        }
-
         public void HacerTostadas(string textToShow)
         {
             var context = MainApplication.Context;

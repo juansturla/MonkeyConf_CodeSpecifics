@@ -4,11 +4,8 @@ using UIKit;
 
 namespace MonkeyConf.Platforms.iOS
 {
-    public class OpenSettingsiOS:IOpenSettings
+    public partial class OpenSettings
     {
-        public OpenSettingsiOS()
-        {
-        }
         public void OpenWifiSettings()
         {
             UIApplication.SharedApplication.OpenUrl(new NSUrl(UIApplication.OpenSettingsUrlString));
