@@ -48,6 +48,24 @@
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.29-preview3" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="OpenSettings\" />
+	  <None Remove="Tostadora\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="OpenSettings\" />
+	  <Folder Include="Tostadora\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="OpenSettings\OpenSettingsAndroid.cs" />
+	  <Compile Remove="Tostadora\TostadoraAndroid.cs" />
+	  <Compile Remove="OpenSettings\OpenSettingsiOS.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="OpenSettings\OpenSettingsAndroid.cs" />
+	  <None Include="Tostadora\TostadoraAndroid.cs" />
+	  <None Include="OpenSettings\OpenSettingsiOS.cs" />
+	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
