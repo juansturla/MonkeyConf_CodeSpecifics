@@ -8,7 +8,7 @@ namespace MonkeyConf
 {
     public partial class OpenSettings
     {
-        public partial void OpenWifiSettings()
+        partial void OpenWifiSettings()
         {
             UIApplication.SharedApplication.OpenUrl(new NSUrl(UIApplication.OpenSettingsUrlString));
         }
