@@ -7,10 +7,6 @@ namespace MonkeyConf.Platforms.Android
 {
     public class OpenSettingsAndroid : IOpenSettings
     {
-        public OpenSettingsAndroid()
-        {
-        }
-
         public void OpenWifiSettings()
         {
             var intent = new Intent(Settings.ActionWifiSettings);
