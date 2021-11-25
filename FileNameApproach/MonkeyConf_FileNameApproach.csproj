@@ -53,6 +53,14 @@
 		<Compile Remove="*/*.ios.cs"/>
 	</ItemGroup>
 
+	<ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
+		<Compile Include="*/*.ios.cs"/>
+	</ItemGroup>
+
+	<ItemGroup Condition="$(TargetFramework.Contains('-android'))">
+		<Compile Include="*/*.android.cs"/>
+	</ItemGroup>
+	
 	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<!-- Required - WinUI does not yet have buildTransitive for everything -->
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-preview3" />
