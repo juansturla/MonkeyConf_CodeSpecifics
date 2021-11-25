@@ -57,14 +57,11 @@
 	  <Folder Include="Tostadora\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Remove="OpenSettings\OpenSettingsAndroid.cs" />
-	  <Compile Remove="Tostadora\TostadoraAndroid.cs" />
-	  <Compile Remove="OpenSettings\OpenSettingsiOS.cs" />
+	  <None Include="OpenSettings\OpenSettings.android.cs" />
+	  <None Include="OpenSettings\OpenSettings.ios.cs" />
 	</ItemGroup>
 	<ItemGroup>
-	  <None Include="OpenSettings\OpenSettings.android.cs" />
-	  <None Include="Tostadora\TostadoraAndroid.cs" />
-	  <None Include="OpenSettings\OpenSettings.ios.cs" />
+	  <Compile Remove="*\*.android.cs" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
