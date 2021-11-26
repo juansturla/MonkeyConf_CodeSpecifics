@@ -5,10 +5,6 @@ namespace MonkeyConf.Platforms.Android
 {
     public class TostadoraAndroid:ITostadora
     {
-        public TostadoraAndroid()
-        {
-        }
-
         public void HacerTostadas(string textToShow)
         {
             var context = MainApplication.Context;
