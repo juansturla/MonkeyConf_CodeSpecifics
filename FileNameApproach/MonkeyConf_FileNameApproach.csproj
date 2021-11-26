@@ -10,10 +10,10 @@
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
 
 		<!-- Display name -->
-		<ApplicationTitle>MonkeyConf</ApplicationTitle>
+		<ApplicationTitle>MonkeyConf FileNames</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.MonkeyConf</ApplicationId>
+		<ApplicationId>com.companyname.MonkeyConfFileNames</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>
