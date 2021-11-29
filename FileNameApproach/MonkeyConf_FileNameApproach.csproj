@@ -46,19 +46,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Remove="*/*.android.cs"/>
+		<Compile Remove="*/*.android.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Remove="*/*.ios.cs"/>
+		<Compile Remove="*/*.ios.cs" />
 	</ItemGroup>
 
 	<ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
-		<Compile Include="*/*.ios.cs"/>
+		<Compile Include="*/*.ios.cs" />
 	</ItemGroup>
 
 	<ItemGroup Condition="$(TargetFramework.Contains('-android'))">
-		<Compile Include="*/*.android.cs"/>
+		<Compile Include="*/*.android.cs" />
 	</ItemGroup>
 	
 	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
@@ -67,6 +67,9 @@
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.29-preview3" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Include="OpenSettings\OpenSettings.ios.cs" />
+	</ItemGroup>
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
